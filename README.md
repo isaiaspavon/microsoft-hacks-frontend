@@ -1,3 +1,34 @@
+
+# GitHub instructions
+
+```
+git clone https://github.com/isaiaspavon/microsoft-hacks-frontend.git
+```
+
+```
+git init
+```
+
+```
+git remote add origin git@github.com:isaiaspavon/microsoft-hacks-frontend.git
+```
+
+```
+git branch -M main
+```
+
+```
+cd vision-aid
+```
+
+```
+npm install
+```
+
+
+
+<!-- 
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +83,4 @@ export default tseslint.config({
   },
 })
 ```
+-->
