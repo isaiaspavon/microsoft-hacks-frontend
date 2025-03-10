@@ -1,0 +1,1 @@
+// TextReader.tsx → Converts extracted text to speech.

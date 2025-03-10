@@ -1,0 +1,1 @@
+// FileUploader.tsx → Allows users to upload images for text extraction.

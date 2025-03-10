@@ -1,0 +1,1 @@
+// Page that extracts and reads text aloud from images.

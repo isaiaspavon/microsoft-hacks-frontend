@@ -1,0 +1,1 @@
+// useAzureVision.ts calls Azure AI Vision and returns detected objects.

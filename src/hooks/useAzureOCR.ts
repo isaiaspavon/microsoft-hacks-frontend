@@ -1,0 +1,1 @@
+// Calls Azure Document Intelligence API to extract text from images.

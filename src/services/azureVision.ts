@@ -1,0 +1,1 @@
+// Sends image data to Azure AI Vision API and returns object detection results.

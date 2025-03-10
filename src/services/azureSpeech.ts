@@ -1,0 +1,1 @@
+// Converts extracted text to speech using Azure Speech Services.

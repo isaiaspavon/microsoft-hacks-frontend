@@ -1,0 +1,1 @@
+// azureOCR.ts calls Azure Document Intelligence for text recognition.

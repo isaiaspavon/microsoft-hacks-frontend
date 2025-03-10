@@ -1,0 +1,1 @@
+// VoiceCommand.tsx → Enables hands-free navigation with speech recognition.

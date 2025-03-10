@@ -1,0 +1,1 @@
+// Page where users can translate extracted text into different languages.

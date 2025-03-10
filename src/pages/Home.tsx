@@ -1,0 +1,1 @@
+// The homepage with navigation to scanning, reading, and translating.

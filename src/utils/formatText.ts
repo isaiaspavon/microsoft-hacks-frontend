@@ -1,0 +1,1 @@
+// Cleans up and formats extracted text for better readability.

@@ -1,0 +1,1 @@
+// Translates text into different languages using Azure Translator API.

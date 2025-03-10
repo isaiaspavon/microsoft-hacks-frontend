@@ -1,0 +1,1 @@
+// CameraInput.tsx → Handles live camera input for object detection.

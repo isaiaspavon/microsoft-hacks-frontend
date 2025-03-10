@@ -1,0 +1,1 @@
+// Page where users can scan surroundings and detect objects.
