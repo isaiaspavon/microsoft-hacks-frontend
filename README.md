@@ -18,7 +18,7 @@ git branch -M main
 ```
 
 ```
-cd vision-aid
+cd microsoft-hacks-frontend
 ```
 
 ```
