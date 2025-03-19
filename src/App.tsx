@@ -54,6 +54,7 @@ export function App() {
     <div>
       <h1>AI-Based Accessibility Tool</h1>
 
+      <h1>Upload and Capture</h1>
       {/* Upload and Capture */}
       <FileUploader onUpload={handleImageUpload} />
       <CameraInput onCapture={handleImageCapture} />
