@@ -7,8 +7,15 @@ export function VoiceCommand({ onCommand }: { onCommand: (text: string) => void 
   const [error, setError] = useState<string | null>(null);
 
   function startListening() {
-    const recognition = new (window.SpeechRecognition || (window as any).webkitSpeechRecognition)();
-    
+    const SpeechRecognition =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      setError("Speech recognition is not supported in this browser.");
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
     recognition.lang = "en-US";
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
@@ -18,8 +25,9 @@ export function VoiceCommand({ onCommand }: { onCommand: (text: string) => void 
       setError(null);
     };
 
-    recognition.onerror = (event) => {
-      setError("Speech recognition error: " + event.error);
+    recognition.onerror = (event: Event) => {
+      const errorMessage = (event as any).error || "Unknown error occurred.";
+      setError("Speech recognition error: " + errorMessage);
       setRecording(false);
     };
 
@@ -27,7 +35,7 @@ export function VoiceCommand({ onCommand }: { onCommand: (text: string) => void 
       setRecording(false);
     };
 
-    recognition.onresult = (event) => {
+    recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript;
       onCommand(transcript);
     };
